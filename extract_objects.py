@@ -44,8 +44,8 @@ if __name__ == "__main__":
 
     step = 300
 
-    for i in range(60787, 70000, step):
-        print('{} / {}'.format(i, 75000))
+    for i in range(1, 70000, step):
+        print('{} / {}'.format(i, 70000))
         j = export_objects(i, step)
 
         #p['features'][0]['attributes']['OBJECTID']
