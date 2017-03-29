@@ -4,7 +4,7 @@ import requests
 import json
 import time
 
-ARCGIS_SERVER_URL = 'http://carte.ville.sherbrooke.qc.ca/infopropriete/proxy.ashx?http://carte.ville.sherbrooke.qc.ca/arcgis/rest/services/Localisateur/MapServer/0/query?{}'
+ARCGIS_SERVER_URL = 'https://cartes.ville.sherbrooke.qc.ca/arcgis/rest/services/Utilitaires/Localisateur/MapServer/0/query?{}'
 HEADERS = {
     'DNT' : '1',
     'Accept-Encoding' : 'gzip, deflate, sdch',
@@ -12,7 +12,7 @@ HEADERS = {
     'User-Agent' : 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36',
     'Content-Type' : 'application/x-www-form-urlencoded',
     'Accept' : '*/*',
-    'Referer' : 'http://carte.ville.sherbrooke.qc.ca/infopropriete/',
+    'Referer' : 'https://carte.ville.sherbrooke.qc.ca/infopropriete/',
     'X-Requested-With' : 'XMLHttpRequest',
     'Connection' : 'keep-alive',
 }
